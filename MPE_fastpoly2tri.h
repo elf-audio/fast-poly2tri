@@ -158,7 +158,7 @@
   typedef float f32;
   typedef double f64;
   typedef size_t uxx;
-  typedef ssize_t bxx;
+  typedef int32_t bxx;
   typedef intptr_t imm;
   typedef uintptr_t umm;
 #endif
@@ -194,6 +194,8 @@ typedef struct MPEPolyPoint
   struct MPEPolyEdge* FirstEdge;
   poly_float X;
   poly_float Y;
+  unsigned int index;
+	unsigned int array;
 } MPEPolyPoint;
 
 typedef struct MPEPolyTriangle
